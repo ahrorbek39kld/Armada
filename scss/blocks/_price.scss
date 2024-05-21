@@ -1,0 +1,10 @@
+.price {
+&__list {
+  display: flex;
+  flex-wrap: wrap;
+gap: 30px;
+}
+&__item {
+width: 270px;}
+
+}

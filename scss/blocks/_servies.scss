@@ -1,0 +1,32 @@
+.servies {
+ 
+  &__list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  &__item {
+    box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.05);
+padding: 30px 20px;
+border-radius: 7px;
+
+    text-align: center;
+    background-color: #fff;
+    h3 {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20.88px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.56px;
+      text-align: center;
+      color: #5E5E5E;
+      margin-bottom: 20px;
+      }
+  }
+}

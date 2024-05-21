@@ -1,0 +1,17 @@
+.productions {
+  &__h2 {
+    display: flex;
+    display: flex;
+    justify-content: center;
+  }
+  &__list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
