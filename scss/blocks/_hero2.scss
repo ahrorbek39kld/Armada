@@ -1,6 +1,11 @@
-&__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 30px;
+.hero2 {
+  &__text {
+    height: 100px;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  align-items: center;
 }

@@ -9,24 +9,39 @@
   <body>
     <header class="armada">
       <div class="armada__box">
-        <p class="armada__text">Наша сила в вашем успехе !</p>
-        <p class="armada__text2">Нужна помощь? Свяжитесь с нашим экспретом</p>
-        <a class="armada__link" href="tel: +996553993342">+996 (553) 993 342</a>
+        <div class="container">
+          <p class="armada__text">Наша сила в вашем успехе !</p>
+          <p class="armada__text2">Нужна помощь? Свяжитесь с нашим экспретом</p>
+          <a class="armada__link" href="tel: +996553993342"
+            >+996 (553) 993 342</a
+          >
+        </div>
+      </div>
+      <div class="armada__bottom container">
+        <div class="menu_1">
+          <button class="menu__btn2">
+            <img id="open"  src="./images/Menu.svg" alt="Menu" />
+            <img id="close" class="close-btn" src="./images/close.svg" alt="Menu" />
+          </button>
+          <img class="menu__logo" src="./images/armada.svg" alt="" />
+        </div>
+
+        <div>
+          <nav id="menu" class="menu">
+            <a class="menu__link active" href="#">Главная</a>
+            <a class="menu__link" href="./pages/servies.html">Услуги</a>
+            <a class="menu__link" href="./pages/hero2.html">О нас</a>
+            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="#">Портфолио</a>
+            <a class="menu__link" href="#">Производство</a>
+            <a class="menu__link menu__btn" download href="./price.pdf"
+              >Скачать прайс</a
+            >
+          </nav>
+        </div>
       </div>
     </header>
-    <nav class="menu">
-      <div class="menu_1">
-        <img class="menu__logo" src="./images/armada.svg" alt="" />
-        <a class="menu__link" href="./pages/servies.html">Услуги</a>
-        <a class="menu__link" href="./pages/hero2.html">О нас</a>
-        <a class="menu__link" href="#">Контакты</a>
-        <a class="menu__link" href="#">Портфолио</a>
-        <a class="menu__link" href="#">Производство</a>
-        <a class="menu__link menu__btn" download href="./price.pdf"
-          >Скачать прайс</a
-        >
-      </div>
-    </nav>
+
     <main>
       <section class="hero">
         <div class="hero__bg"></div>
@@ -282,5 +297,8 @@
         </li>
       </ul>
     </footer>
+
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

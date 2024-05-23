@@ -52,10 +52,17 @@ button {
 }
 
 .container {
-  margin: 0% auto;
-  width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media screen and (max-width: 480px) {
+    max-width: 400px;
+  }
 }
 section {
   margin-bottom: 60px;
   background-color: #fefefe;
+}
+button {
+  border: none;
+  background-color: transparent;
 }

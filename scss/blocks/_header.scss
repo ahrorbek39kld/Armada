@@ -1,12 +1,32 @@
 .armada {
-  background-color: #65256f;
-  width: 100%;
-  padding: 20px 0;
+  &__bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 .armada__box {
   display: flex;
   align-items: center;
+  padding: 20px 0;
   justify-content: space-evenly;
+  background-color: #65256f;
+  @media screen and (max-width: 480px) {
+    background-color: #753ed6;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .armada__text {
   width: 463px;
@@ -24,27 +44,60 @@
   line-height: 16.24px;
   text-align: left;
   color: #ffffff;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .armada__link {
-  width: 133px;
-  height: 19px;
-  top: 10px;
-  left: 1173px;
-  gap: 0px;
-  opacity: 0px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
   color: #fbc70e;
 }
 .menu {
+  display: flex;
+  gap: 30px;
   padding: 10px 0;
+  margin-right: 56px;
+  &__btn2 {
+    display: none;
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  &__open {
+    position: absolute;
+    top: 87px;
+    left: -40px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 60px;
+    z-index: 10;
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100vh;
+    opacity: .9;
+    background-color: #ffffff;
+    box-shadow: 8px 4px 12px 0 rgba(0, 0, 0, 0.5);
+    background: #fff;
+  }
+}
+
+.menu_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .menu__link {
   color: #2a2828;
 }
-.menu_1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+
 .menu__btn {
   padding: 14px 22px;
   font-size: 14px;
@@ -54,7 +107,6 @@
   background-color: #65256f;
   color: #ffffff;
   border-radius: 5px;
-
 }
 .img3 {
   display: flex;
@@ -62,4 +114,11 @@
   align-items: flex-end;
 }
 .menu__btn {
+}
+
+.active {
+  border-bottom: 2px solid #ffb700;
+}
+.close-btn {
+  display: none;
 }
