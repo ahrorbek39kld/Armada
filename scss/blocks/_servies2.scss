@@ -3,14 +3,17 @@
     display: grid;
     gap: 20px;
     img {
-    object-fit: cover;}
+      object-fit: cover;
+    }
   }
   &__inner {
-  position: relative;
-  p{
-  position: absolute;
-  left:40%;
-bottom: 20px;color: #fff;}
+    position: relative;
+    p {
+      position: absolute;
+      left: 40%;
+      bottom: 20px;
+      color: #fff;
+    }
   }
 
   &__img {
@@ -55,9 +58,18 @@ bottom: 20px;color: #fff;}
     grid-row-start: 3;
     grid-row-end: 4;
   }
-  hero2__list {
+}
+
+.have2 {
+  &__list {
     display: flex;
-    flex-direction: row-reverse;
+
     justify-content: space-evenly;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    text-align: center;
   }
 }

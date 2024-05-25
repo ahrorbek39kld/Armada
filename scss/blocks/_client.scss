@@ -4,5 +4,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+    }
+    padding-left: 40%;
   }
 }
