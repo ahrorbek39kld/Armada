@@ -5,7 +5,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-
+    @media screen and (max-width: 480px) {
+      padding:10px 0;
+    }
     div {
       display: flex;
       justify-content: space-between;
@@ -18,7 +20,9 @@
   padding: 20px 0;
   justify-content: space-evenly;
   background-color: #65256f;
+
   @media screen and (max-width: 480px) {
+    padding: 10px 0;
     background-color: #753ed6;
   }
   div {
