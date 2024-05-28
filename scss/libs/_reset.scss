@@ -31,6 +31,10 @@ button {
   text-align: center;
   color: #000000;
   margin-bottom: 60px;
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+    line-height: 25.68px;
+  }
 }
 .title::after {
   position: absolute;
@@ -40,6 +44,9 @@ button {
   top: 50%;
   right: 0;
   background-color: #bebebe;
+  @media screen and (max-width: 480px) {
+    width: 15%;
+  }
 }
 .title::before {
   position: absolute;
@@ -54,11 +61,16 @@ button {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+
   @media screen and (max-width: 480px) {
     max-width: 400px;
+    margin: 0 auto;
   }
   @media screen and (max-width: 420px) {
     max-width: 350px;
+    padding-left: 20px;
+    margin: 0 auto;
+    padding-right: 20px;
   }
 }
 section {
@@ -68,4 +80,7 @@ section {
 button {
   border: none;
   background-color: transparent;
+}
+main {
+  border: 2px solid red;
 }
