@@ -11,4 +11,16 @@
   &__item {
     width: 270px;
   }
+  &__text1 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5a5858;
+    margin-top: 10px;
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #4c1f8c;
+  }
 }

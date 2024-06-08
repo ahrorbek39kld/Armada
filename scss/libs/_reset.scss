@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul, menu  {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -56,6 +56,9 @@ button {
   top: 50%;
   left: 0;
   background-color: #bebebe;
+  @media screen and (max-width: 480px) {
+    width: 15%;
+  }
 }
 
 .container {
@@ -80,7 +83,4 @@ section {
 button {
   border: none;
   background-color: transparent;
-}
-main {
-  border: 2px solid red;
 }

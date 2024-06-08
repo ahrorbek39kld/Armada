@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.min.css" />
+    <link rel="stylesheet" href="../css/styles.min.css"/>
   </head>
   <body>
     <header class="armada">
@@ -34,11 +34,11 @@
         <div>
           <nav id="menu" class="menu">
             <a class="menu__link" href="../index.html">Главная</a>
-            <a class="menu__link active" href="#">Услуги</a>
-            <a class="menu__link" href="./pages/hero2.html">О нас</a>
-            <a class="menu__link" href="#">Контакты</a>
-            <a class="menu__link" href="#">Портфолио</a>
-            <a class="menu__link" href="#">Производство</a>
+            <a class="menu__link active-link" href="#">Услуги</a>
+            <a class="menu__link" href="./hero2.html">О нас</a>
+            <a class="menu__link" href="./contact.html">Контакты</a>
+            <a class="menu__link" href="./portfolio.html">Портфолио</a>
+            <a class="menu__link" href="./prod.html">Производство</a>
             <a class="menu__link menu__btn" download href="./price.pdf"
               >Скачать прайс</a
             >
@@ -46,15 +46,14 @@
         </div>
       </div>
     </header>
-  
+
     <menu>
       <section class="hero2">
         <div class="container">
           <h2 class="hero2__title title">Наши услуги</h2>
           <div class="hero2__wrapper">
-            <div class="hero2__inner">
+            <div class="hero2__inner hero2__img">
               <img
-                class="hero2__img"
                 width="368px"
                 height="342px"
                 src="../images/ysluga_1.jpg"
@@ -62,9 +61,8 @@
               />
               <p>qwddqdr</p>
             </div>
-            <div class="hero2__inner">
+            <div class="hero2__inner hero2__img1">
               <img
-                class="hero2__img1"
                 width="368px"
                 height="342px"
                 src="../images/ysluga_2.jpg"
@@ -72,9 +70,8 @@
               />
               <p>gcxhjzk</p>
             </div>
-            <div class="hero2__inner">
+            <div class="hero2__inner hero2__img2">
               <img
-                class="hero2__img2"
                 width="368px"
                 height="700px"
                 src="../images/Rectangle 146.jpg"
@@ -82,9 +79,8 @@
               />
               <p>cghzxj</p>
             </div>
-            <div>
+            <div class="hero2__inner hero2__img3">
               <img
-                class="hero2__img3"
                 width="368px"
                 height="342px"
                 src="..//images/ysluga_1.jpg"
@@ -92,9 +88,8 @@
               />
               <p>fdhjxdh</p>
             </div>
-            <div>
+            <div class="hero2__inner hero2__img5">
               <img
-                class="hero2__img5"
                 width="768px"
                 height="342px"
                 src="../images/ysluga_1.jpg"
@@ -102,9 +97,8 @@
               />
               <p>cxnckx</p>
             </div>
-            <div>
+            <div class="hero2__img6 hero2__inner">
               <img
-                class="hero2__img6"
                 width="368px"
                 height="342px"
                 src="../images/ysluga_2.jpg"
@@ -112,9 +106,8 @@
               />
               <p>wertyu</p>
             </div>
-            <div>
+            <div class="hero2__img7 hero2__inner">
               <img
-                class="hero2__img7"
                 width="368px"
                 height="342px"
                 src="../images/ysluga_2.jpg"
@@ -147,12 +140,17 @@
           </ul>
 
           <h2 class="team__subtitle">Оставьте бесплатную заявку</h2>
-          <p>
+          <p class="team__text">
             и менеджер по работе с клиентами свяжется с вами и проконсультирует
           </p>
-          <form action="https://formspree.io/f/xqkrjvby" method="POST">
+          <form
+            class="team__form"
+            action="https://formspree.io/f/xqkrjvby"
+            method="POST"
+          >
             <label>
               <input
+                class="team__input"
                 type="text"
                 name="message"
                 placeholder="ваше имя"
@@ -160,14 +158,20 @@
               />
             </label>
             <label>
-              <input type="tel" name="tel" placeholder="ваше имя" required />
+              <input
+                class="team__input"
+                type="tel"
+                name="tel"
+                placeholder="ваше номер телефона"
+                required
+              />
             </label>
-            <button type="submit">Send</button>
+            <button class="menu__link menu__btn" type="submit">Отпрвить</button>
           </form>
         </div>
       </section>
     </menu>
-    <footer>
+    <footer class="footer">
       <ul class="footer__list">
         <li>
           <h2>О компании</h2>

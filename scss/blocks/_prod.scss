@@ -1,0 +1,8 @@
+.prod {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+ margin-bottom: 30px;}
+}

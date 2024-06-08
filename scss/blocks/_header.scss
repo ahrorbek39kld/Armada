@@ -125,9 +125,14 @@
 .menu__btn {
 }
 
-.active {
+.active-link {
   border-bottom: 2px solid #ffb700;
 }
 .close-btn {
   display: none;
+}
+header {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  margin-bottom: 22px;
 }
