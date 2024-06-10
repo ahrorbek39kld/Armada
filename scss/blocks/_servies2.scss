@@ -5,6 +5,11 @@
     img {
       object-fit: cover;
     }
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   &__inner {
     position: relative;

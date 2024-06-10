@@ -2,6 +2,10 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      gap: 30px;
+    }
   }
   &__text {
  margin-bottom: 30px;}

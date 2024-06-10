@@ -13,16 +13,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    @media screen and (max-width: 480px) {
+      align-items: center;
+    }
   }
   &__item {
-    @media screen and (max-width: 480px) {
-      max-width: 320px;
-    }
     img {
       width: 100%;
-    }
-    @media screen and (max-width: 480px) {
-      max-width: 320px;
     }
   }
 }

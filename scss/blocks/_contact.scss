@@ -18,12 +18,18 @@
     gap: 30px;
   }
 }
+
 .ifrem {
   display: flex;
   justify-content: center;
   gap: 200px;
   margin-top: 50px;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
+
 .ifrem {
   margin-top: 50px;
 }
